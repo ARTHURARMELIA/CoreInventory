@@ -1,4 +1,4 @@
-const API = '/api';
+const API = process.env.NEXT_PUBLIC_API_URL + '/api';
 
 function getToken() {
   if (typeof window === 'undefined') return null;
